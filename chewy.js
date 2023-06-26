@@ -77,5 +77,14 @@ client.on("ready", () => {
 
       }, 25000); // SÜREYİ AYARLAYAABİLİRSİMİZ
 })
+client.on("ready", () => {
+      setInterval(() => {
+
+       let chewy = client.channels.cache.get("KANAL ID")
+
+       chewy.send("Selam")
+
+      }, 15000); // SÜREYİ AYARLAYAABİLİRSİMİZ
+})
 
 client.login("HESAP TOKENİ")
